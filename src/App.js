@@ -1,24 +1,18 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
-
+import Wrapper from './components/Wrapper';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <body style={{
+      width: '1950px',
+      height: '950px',
+      //backgroundColor: '#dddddf',
+    }}>
+      <div className='heading'>
+        <h1 >Units Converter</h1>
+      </div>
+      <Wrapper />
+    </body>
   );
 }
 

@@ -2,37 +2,153 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-size: 35px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+select {
+  
+  margin-top: 3px;
+  appearance: none;
+  background-color: #f5f4f4;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  padding: 0 1em 0 0;
+  
+  width: 110%;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: inherit;
+  line-height: inherit;
+  z-index: 1;
+  &::-ms-expand {
+    display: none;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  outline: none;
+ 
+  grid-template-areas: "select";
   align-items: center;
+  position: relative;
+
+  select,
+  &::after {
+    grid-area: select;
+  }
+
+  min-width: 15ch;
+  max-width: 30ch;
+
+  border-radius: 0.25em;
+  padding: 0.25em 0.5em;
+
+  font-size: 1.20rem;
+  cursor: pointer;
+  line-height: 1.1;
+
+ 
+  background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+}
+
+.unitSelect{
+  
+  display: grid; 
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 5px; 
+  position: absolute;
+  font-size: 0;
+  overflow: hidden;
+}
+
+/* CSS */
+.button-4 {
+  appearance: none;
+  background-color: #f5f4f4;
+
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+  box-sizing: border-box;
+  color: #24292E; 
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  padding: 6px 16px;
+  position: relative;
+  transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  word-wrap: break-word;
+}
+
+.button-4:hover {
+  background-color: #F3F4F6;
+  text-decoration: none;
+  transition-duration: 0.1s;
+}
+
+.button-4:disabled {
+  background-color: #FAFBFC;
+  border-color: rgba(27, 31, 35, 0.15);
+  color: #959DA5;
+  cursor: default;
+}
+
+.button-4:active {
+  background-color: #EDEFF2;
+  box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
+  transition: none 0s;
+}
+
+.button-4:focus {
+  outline: 1px transparent;
+}
+
+.button-4:before {
+  display: none;
+}
+
+input {
+  margin-top: 50px;
+  width: 105%;
+  height: 20px;
+}
+
+
+
+.wrapper{
+  display: grid;
+  gap: 20px 40px;
+ 
+  background-color: #eaeaeb;
+  border: 5px solid black;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: auto;
+  position: relative;
+  top: -10px;
+  width: 35%;
+  height: 500px;
+  box-shadow: 0 0 25px RGBa(0,0,0,0.5);
+   /* rounded corners*/
+  border-radius: 25px;
+  padding: 20px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.heading{
+  
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  position: relative;
+  top: -10px;
+  width: 25%;
+  font-family:  Monaco, monospace;
+  
 }
