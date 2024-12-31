@@ -4,8 +4,7 @@ import Wrapper from './components/Wrapper';
 function App() {
   return (
     <body style={{
-      width: '1950px',
-      height: '950px',
+      
       //backgroundColor: '#dddddf',
     }}>
       <div className='heading'>
